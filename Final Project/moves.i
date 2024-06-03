@@ -1,0 +1,88 @@
+# 1 "moves.c"
+# 1 "<built-in>"
+# 1 "<command-line>"
+# 1 "moves.c"
+# 1 "moves.h" 1
+
+
+
+
+
+enum { OPPONENT, ALLY };
+
+typedef struct tag_move {
+    char text[10];
+    char flavorText[61];
+    int damage;
+    int hitAll;
+    int targeting;
+    int healing;
+} MOVE;
+
+extern MOVE MOVE_SLASH;
+extern MOVE MOVE_BLAST;
+extern MOVE MOVE_HEAL;
+# 33 "moves.h"
+extern MOVE MOVE_NIBBLE;
+extern MOVE MOVE_BITE;
+extern MOVE MOVE_STRIKE;
+extern MOVE MOVE_SLASH;
+
+extern MOVE MOVE_FLAIL;
+extern MOVE MOVE_PUFFUP;
+extern MOVE MOVE_WAVE;
+
+extern MOVE MOVE_REGEN;
+extern MOVE MOVE_RESOLVE;
+extern MOVE MOVE_SHEAL;
+extern MOVE MOVE_LHEAL;
+extern MOVE MOVE_SHEALBURST;
+extern MOVE MOVE_LHEALBURST;
+
+extern MOVE MOVE_DASH;
+extern MOVE MOVE_TRANSCEND;
+
+extern MOVE MOVE_TORPEDO1;
+extern MOVE MOVE_TORPEDO2;
+extern MOVE MOVE_SHIELD1;
+extern MOVE MOVE_SHIELD2;
+extern MOVE MOVE_BLAST1;
+extern MOVE MOVE_BLAST2;
+extern MOVE MOVE_DEATHRAY;
+extern MOVE MOVE_BRUH;
+
+extern MOVE MOVE_NONE;
+# 2 "moves.c" 2
+
+
+MOVE MOVE_NIBBLE = { "NIBBLE", "%s NIBBLED\nON %s!", 4, 0, OPPONENT, 0 };
+MOVE MOVE_BITE = { "BITE", "%s BIT\nINTO %s!", 6, 0, OPPONENT, 0 };
+MOVE MOVE_STRIKE = { "STRIKE", "%s STRUCK\n%s!", 8, 0, OPPONENT, 0 };
+MOVE MOVE_SLASH = { "SLASH", "%s SLASHED\n%s!", 8, 0, OPPONENT, 0 };
+
+MOVE MOVE_FLAIL = { "FLAIL", "%s FLAILED\nAROUND!", 3, 1, OPPONENT, 0 };
+MOVE MOVE_PUFFUP = { "PUFF UP", "%s PUFFED UP!", 5, 1, OPPONENT, 0 };
+MOVE MOVE_WAVE = { "TIDE WAVE", "%s CREATED\nA TIDAL WAVE!", 6, 1, OPPONENT, 0 };
+
+MOVE MOVE_REGEN = { "REGEN", "%s\nREGENERATED!", 0, 0, ALLY, 4 };
+MOVE MOVE_RESOLVE = { "RESOLVE", "%s\nRESOLVED TO WIN!", 0, 0, ALLY, 8 };
+MOVE MOVE_SHEAL = { "S HEAL", "%s HEALED %s!", 0, 0, ALLY, 4 };
+MOVE MOVE_LHEAL = { "L HEAL", "%s HEALED %s!", 0, 0, ALLY, 6 };
+MOVE MOVE_SHEALBURST = { "S H BURST", "%s HEALED\nTHEIR ALLIES!", 0, 1, ALLY, 3 };
+MOVE MOVE_LHEALBURST = { "L H BURST", "%s HEALED\nTHEIR ALLIES!", 0, 1, ALLY, 5 };
+
+
+
+MOVE MOVE_DASH = { "DASH", "%s MOVED WITHINCREDIBLE SPEED!\n+1 TURN", 0, 0, ALLY, 0 };
+MOVE MOVE_TRANSCEND = {"TRANSCEND", "%s TRANSCENDEDMORTALITY.", 0, 0, ALLY, 0};
+
+MOVE MOVE_TORPEDO1 = { "TORPEDO", "%s FIRED\nA TORPEDO AT\n%s!", 6, 0, OPPONENT, 0 };
+MOVE MOVE_TORPEDO2 = { "TORPEDO+", "%s FIRED\nA TORPEDO AT\n%s!", 8, 0, OPPONENT, 0 };
+MOVE MOVE_SHIELD1 = { "SHIELD", "%s SHIELDED\n%s!", 0, 0, ALLY, 4 };
+MOVE MOVE_SHIELD2 = { "SHIELD+", "%s SHIELDED\n%s!", 0, 0, ALLY, 8 };
+MOVE MOVE_BLAST1 = { "BLAST", "%s BLASTED\nTHE ENEMY!", 3, 1, OPPONENT, 0 };
+MOVE MOVE_BLAST2 = { "BLAST+", "%s BLASTED\nTHE ENEMY!", 5, 1, OPPONENT, 0 };
+MOVE MOVE_DEATHRAY = { "DEATHRAY", "%s\nANNIHILATED\n%s!", 99, 0, OPPONENT, 0 };
+MOVE MOVE_BRUH = { "BRUH", "*VINE BOOM SFX*", 30, 1, OPPONENT, 0 };
+
+MOVE MOVE_NONE = { "", "", 0, 0, 0, 0 };

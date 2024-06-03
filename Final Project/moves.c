@@ -1,0 +1,34 @@
+#include "moves.h"
+
+// single
+MOVE MOVE_NIBBLE = { "NIBBLE", "%s NIBBLED\nON %s!", 4, 0, OPPONENT, 0 };
+MOVE MOVE_BITE = { "BITE", "%s BIT\nINTO %s!", 6, 0, OPPONENT, 0 };
+MOVE MOVE_STRIKE = { "STRIKE", "%s STRUCK\n%s!", 8, 0, OPPONENT, 0 };
+MOVE MOVE_SLASH = { "SLASH", "%s SLASHED\n%s!", 8, 0, OPPONENT, 0 };
+// multi
+MOVE MOVE_FLAIL = { "FLAIL", "%s FLAILED\nAROUND!", 3, 1, OPPONENT, 0 };
+MOVE MOVE_PUFFUP = { "PUFF UP", "%s PUFFED UP!", 5, 1, OPPONENT, 0 };
+MOVE MOVE_WAVE = { "TIDE WAVE", "%s CREATED\nA TIDAL WAVE!", 6, 1, OPPONENT, 0 };
+// heal
+MOVE MOVE_REGEN = { "REGEN", "%s\nREGENERATED!", 0, 0, ALLY, 4 };
+MOVE MOVE_RESOLVE = { "RESOLVE", "%s\nRESOLVED TO WIN!", 0, 0, ALLY, 8 };
+MOVE MOVE_SHEAL = { "S HEAL", "%s HEALED %s!", 0, 0, ALLY, 4 };
+MOVE MOVE_LHEAL = { "L HEAL", "%s HEALED %s!", 0, 0, ALLY, 6 };
+MOVE MOVE_SHEALBURST = { "S H BURST", "%s HEALED\nTHEIR ALLIES!", 0, 1, ALLY, 3 };
+MOVE MOVE_LHEALBURST = { "L H BURST", "%s HEALED\nTHEIR ALLIES!", 0, 1, ALLY, 5 };
+// special
+// Don't mind the 'WITHINCREDIBLE'. The line lengths work out just so that this makes it look good
+// Same for transcend
+MOVE MOVE_DASH = { "DASH", "%s MOVED WITHINCREDIBLE SPEED!\n+1 TURN", 0, 0, ALLY, 0 };
+MOVE MOVE_TRANSCEND = {"TRANSCEND", "%s TRANSCENDEDMORTALITY.", 0, 0, ALLY, 0};
+// player
+MOVE MOVE_TORPEDO1 = { "TORPEDO", "%s FIRED\nA TORPEDO AT\n%s!", 6, 0, OPPONENT, 0 };
+MOVE MOVE_TORPEDO2 = { "TORPEDO+", "%s FIRED\nA TORPEDO AT\n%s!", 8, 0, OPPONENT, 0 };
+MOVE MOVE_SHIELD1 = { "SHIELD", "%s SHIELDED\n%s!", 0, 0, ALLY, 4 };
+MOVE MOVE_SHIELD2 = { "SHIELD+", "%s SHIELDED\n%s!", 0, 0, ALLY, 8 };
+MOVE MOVE_BLAST1 = { "BLAST", "%s BLASTED\nTHE ENEMY!", 3, 1, OPPONENT, 0 };
+MOVE MOVE_BLAST2 = { "BLAST+", "%s BLASTED\nTHE ENEMY!", 5, 1, OPPONENT, 0 };
+MOVE MOVE_DEATHRAY = { "DEATHRAY", "%s\nANNIHILATED\n%s!", 99, 0, OPPONENT, 0 };
+MOVE MOVE_BRUH = { "BRUH", "*VINE BOOM SFX*", 30, 1, OPPONENT, 0 };
+// default
+MOVE MOVE_NONE = { "", "", 0, 0, 0, 0 };

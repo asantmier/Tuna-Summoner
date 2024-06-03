@@ -1,0 +1,20 @@
+{
+    "files.associations": {
+        "time.h": "c",
+        "hw3lib.h": "c",
+        "images.h": "c",
+        "hw05lib.h": "c",
+        "tempspritesheet.h": "c",
+        "tempbattle.h": "c",
+        "world.h": "c",
+        "stdio.h": "c",
+        "stdlib.h": "c",
+        "print.h": "c",
+        "mode0.h": "c",
+        "tempbackground.h": "c",
+        "game.h": "c",
+        "tempbackground_collision.h": "c",
+        "world1collision.h": "c",
+        "damagesfx.h": "c"
+    }
+}
