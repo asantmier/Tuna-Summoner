@@ -18,4 +18,4 @@ my other projects, hence the quality of this one.
 
 You can try the game with any GBA emulator or at
 https://asantmier.github.io/Tuna-Summoner/
-(Note: The web embedded emulator has a weird issue with audio popping. The GBA's audio is bad, but not *that* bad. Sorry about that!)
+(Note: The web version of the emulator has a weird issue with audio popping. The GBA does sound bad, but not *that* bad. Sorry about that!)
