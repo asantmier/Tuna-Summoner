@@ -1,4 +1,6 @@
 # Tuna Summoner
+![mGBA_tmLln4eJMf](https://github.com/asantmier/Tuna-Summoner/assets/91630046/18396d1b-0185-4a7c-8995-095fb9d0cee6)
+
 This is a 2D adventure game with classic turn-based RPG combat I made as a final project for "Media Device Architecture"
 at Georgia Tech. This game is very unique in that it's made to run on the Game Boy Advance (or at least an emulator) with
 all of the C code running directly on the hardware without any engine. I consider this short game complete and feel that
@@ -14,7 +16,7 @@ this game was getting it to run well on the GBA's hardware and I'm very proud of
 is considering I had no prior experience with hardware programming or C. This game was also quite ambitious and finishing
 it in time was a massive challenge that required weeks of nonstop work that, unfortunately, were never possible for any of
 my other projects, hence the quality of this one.
-
+![mGBA_uRXoigg0D6](https://github.com/asantmier/Tuna-Summoner/assets/91630046/4e235b55-53fd-455f-9301-b907b7819043)
 
 You can try the game with any GBA emulator or at
 https://asantmier.github.io/Tuna-Summoner/
