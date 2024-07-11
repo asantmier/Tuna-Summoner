@@ -15,6 +15,7 @@ this game was getting it to run well on the GBA's hardware and I'm very proud of
 is considering I had no prior experience with hardware programming or C. This game was also quite ambitious and finishing
 it in time was a massive challenge that required weeks of nonstop work that, unfortunately, were never possible for any of
 my other projects, hence the quality of this one.
+
 ![mGBA_uRXoigg0D6](https://github.com/asantmier/Tuna-Summoner/assets/91630046/4e235b55-53fd-455f-9301-b907b7819043)
 
 You can try the game with any GBA emulator or at
